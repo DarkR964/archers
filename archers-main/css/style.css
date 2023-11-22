@@ -1,0 +1,282 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #000;
+  overflow-x: hidden;
+}
+
+#nv {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #fff;
+  z-index: 100;
+}
+
+#nv i {
+  margin-left: 35px;
+  margin-right: 35px;
+  transform: scale(1.5);
+}
+
+#nv a.normal i, #nv a.active i {
+  font-size: 21.5px;
+}
+
+#nv a.active {
+  margin-left: 15px;
+  color: #0075FF;
+  border-radius: 5px;
+}
+
+#nv a.normal:nth-child(1) {
+  color: #3CECA4;
+}
+
+#nv a.normal:nth-child(3) {
+  color: #4134BE;
+}
+
+#nv a.normal:nth-child(4) {
+  color: #7D2586;
+}
+
+#nv a.active:hover,
+#nv a.active:active {
+  color: #7D2586;
+  transition: .5s;
+}
+
+#nv a.normal:nth-child(2):hover,
+#nv a.normal:nth-child(2):active,
+#nv a.normal:nth-child(2):hover:after {
+  content: "Hakkımızda";
+  font-size: 14.5px;
+  font-weight: 700;
+  text-align: center;
+  color: #4134BE;
+  transition: .5s;
+}
+
+#nv a.normal:nth-child(3):hover,
+#nv a.normal:nth-child(3):active,
+#nv a.normal:nth-child(3):hover:after {
+  content: "Market";
+  font-size: 14.5px;
+  font-weight: 700;
+  text-align: center;
+  color: #0075FF;
+  transition: .5s;
+}
+
+#nv a.active:hover,
+#nv a.active:active,
+#nv a.active:hover:after {
+  content: "Ana Sayfa";
+  font-size: 14.5px;
+  font-weight: 700;
+  text-align: center;
+  transition: .5s;
+}
+
+#nv a.normal img {
+  max-width: 65px;
+  border-radius: 50%;
+}
+
+#t, #t h1 {
+  padding: 7px 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+
+#desc, #desc h1 {
+  text-align: center;
+  font-size: 21.5px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#btn, #btn:active{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 1000;
+  text-align: center;
+  border-radius: 5px;
+  transform: scale(.85);
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  transition: 1s;
+}
+
+#btn:active, #btn a h1{
+  background: transparent;
+  color: #fff;
+  animation: XD infinite;
+  animation-duration: 2.5s;
+}
+
+@keyframes XD {
+
+  0% {
+    transform: scale(.85);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(.85);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(.85);
+  }
+
+}
+
+#btn h1 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+#grn {
+  height: 45vh;
+  background: #294541;
+}
+
+#nasil {
+  height: 100vh;
+  background: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  
+   #grn hr, #nasil hr {
+    margin-left: 20%;
+   }
+   
+   #nasil {
+     height: 55vh;
+   }
+   
+   #grn {
+     height: 120vh;
+   }
+   
+}
+
+@media screen and (min-width: 950px) {
+  
+  #nasil {
+    height: 20vh;
+  }
+  
+  #grn {
+    height: 20vh;
+  }
+  
+}
+
+@media screen and (min-width: 1100px) {
+  
+  #nasil {
+    height: 20vh;
+  }
+  
+  #grn {
+    height: 15vh;
+  }
+  
+}
+
+hr {
+  width: calc(100% - 150px);
+  margin-left: 5%;
+}
+
+#nasil #t a {
+  color: #000;
+}
+
+#nasil #desc {
+  color: #000;
+}
+
+#xd {
+  width: 75px;
+  height: 75px;
+  margin-left: 250px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  background: royalblue;
+  color: #fff;
+}
+
+#xd a {
+  color: #fff;
+}
+
+#xd i {
+  font-size: 45px;
+  margin-top: 20px;
+  text-align: center;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 1366px) {
+  
+  #nasil {
+    height: 75vh;
+  }
+  
+  #grn {
+    height: 110vh;
+  }
+  
+}
+
+@media screen and (max-width: 1920px) {
+  
+  #grn {
+    height: 110vh;
+  }
+  
+  #nasil { 
+    height: 75vh;
+  }
+  
+}

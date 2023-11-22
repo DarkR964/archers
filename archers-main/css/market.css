@@ -1,0 +1,217 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #000;
+  overflow-x: hidden;
+}
+
+#nv {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 6px 6px 6px #9B9CA3;
+  z-index: 100;
+}
+
+#nv i,
+#nv i:hover:after{
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 21.5px;
+  transform: scale(1.5);
+}
+
+#nv a.normal:nth-child(2) {
+  color: #3CECA4;
+}
+
+#nv a.normal:nth-child(1) {
+  color: #0075FF;
+}
+
+#nv a.normal:nth-child(3) {
+  color: #4134BE;
+}
+
+#nv a.normal:nth-child(4) {
+  color: #7D2586;
+}
+
+#nv a.active:hover,
+#nv a.active:active {
+  color: #7D2586;
+  transition: .5s;
+}
+
+#nv a.normal:nth-child(1):hover,
+#nv a.normal:nth-child(1):active,
+#nv a.normal:nth-child(1):hover:after {
+  content: "Ana Sayfa";
+  font-weight: 700;
+  text-align: center;
+  color: #7D2586;
+  transition: .5s;
+}
+
+#nv a.normal:nth-child(2):hover,
+#nv a.normal:nth-child(2):active,
+#nv a.normal:nth-child(2):hover:after {
+  content: "Hakkımızda";
+  font-weight: 700;
+  text-align: center;
+  color: #4134BE;
+  transition: .5s;
+}
+
+#nv a.normal:nth-child(3):hover,
+#nv a.normal:nth-child(3):active,
+#nv a.normal:nth-child(3):hover:after {
+  content: "Market";
+  font-weight: 700;
+  text-align: center;
+  color: #0075FF;
+  transition: .5s;
+}
+
+#nv a.normal img {
+  max-width: 65px;
+  border-radius: 50%;
+}
+
+#wh {
+  height: 335vh;
+  background: #fff;
+}
+
+#desc,
+#desc h1 {
+  text-align: center;
+  font-size: 32.5px;
+  font-weight: 700;
+  color: #000;
+}
+
+#card {
+  width: 275px;
+  height: 810px;
+  padding: 7px 14px;
+  border-left: 4px solid #CACBD2;
+  box-shadow: 12px 7px 12px #CACBD2;
+  margin-left: 35%;
+  border-radius: 45px;
+  background: #fff;
+}
+
+@media screen and (min-width: 1205px) {
+  
+  #card {
+    height: 800px;
+  }
+  
+}
+
+#icn {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: 80px;
+}
+
+#fiyat {
+  font-size: 27.5px;
+  font-weight: 700;
+  color: #552453;
+  text-align: center;
+}
+
+#ns {
+  padding: 6px 9px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#t {
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: #552453;
+}
+
+@media screen and (max-width: 768px) {
+  
+   #hrr {
+    width: calc(100% - 150px);
+    margin-left: 20%;
+  }
+  
+  #icn {
+    margin-left: 30%;
+  }
+  
+  #card {
+    margin-left: 50px;
+    height: 760px;
+  }
+  
+  #wh {
+    height: 920vh;
+  }
+  
+}
+
+#box-hr {
+  width: 150px;
+  margin-left: 20%;
+}
+
+#ic {
+  font-size: 17.5px;
+  font-weight: 600;
+  padding: 6px 9px;
+  text-align: center;
+}
+
+@media screen and (min-width: 950px) {
+
+  #wh {
+    height: 350vh;
+  }
+  
+  #card {
+    height: 800px;
+  }
+
+}
+
+@media screen and (max-width: 1366px) {
+
+  #wh {
+    height: 350vh;
+  }
+
+}
+
+@media screen and (max-width: 1920px) {
+
+  #wh {
+    height: 350vh;
+  }
+
+}
